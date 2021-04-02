@@ -128,17 +128,14 @@ namespace C__Game
             {
                 return 1;
             }
-
             else if (array[4] == array[5] && array[5] == array[6])
             {
                 return 1;
             }
-
             else if (array[6] == array[7] && array[7] == array[8])
             {
                 return 1;
             }
-
 
 
             // vertical row checking
@@ -147,17 +144,14 @@ namespace C__Game
             {
                 return 1;
             }
-
             else if (array[2] == array[5] && array[5] == array[8])
             {
                 return 1;
             }
-
             else if (array[3] == array[6] && array[6] == array[9])
             {
                 return 1;
             }
-
 
             // diagonal row checking
 
@@ -165,12 +159,10 @@ namespace C__Game
             {
                 return 1;
             }
-
             else if (array[3] == array[5] && array[5] == array[7])
             {
                 return 1;
             }
-
 
             // draw condition checking
 
