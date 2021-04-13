@@ -20,7 +20,7 @@ namespace C__Game
         static int flag = 0;
 
  
-
+        // main function
         static void Main(string[] args)
         {
             Console.WriteLine("\n");
@@ -39,9 +39,9 @@ namespace C__Game
             {
 
                 Console.Clear(); 
-                Console.WriteLine("{0} is X and {1} is O!", player1, player2);
+                Console.WriteLine("{0} is X and {1} is O!", player1, player2);  // display user controls
                 Console.WriteLine("\n");
-                if (playerInstance % 2 == 0)
+                if (playerInstance % 2 == 0) // switch player turns
                 {
                     Console.WriteLine("{0}'s turn", player2);
                 }
@@ -52,16 +52,16 @@ namespace C__Game
 
                 Console.WriteLine("\n");
 
-                TictactoeBoard();
+                TictactoeBoard(); // display board
 
                 userInput = int.Parse(Console.ReadLine());  
 
-                if (userInput == 0)
+                if (userInput == 0)  // Exit app
                 {
                 Environment.Exit(0);
                 }  
 
-                if (array[userInput] != 'X' && array[userInput] != 'O')
+                if (array[userInput] != 'X' && array[userInput] != 'O')  // continue incrementing and amrking boxes on the grid
                 {
                     if (playerInstance % 2 == 0) 
                     {
@@ -102,7 +102,7 @@ namespace C__Game
             Console.ReadLine();
         }
 
-        private static void TictactoeBoard()
+        private static void TictactoeBoard()  // main player board
 
         {
             Console.WriteLine("  -------------------------");
